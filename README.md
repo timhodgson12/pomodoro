@@ -5,6 +5,12 @@
 This is the repository for an ESP32 based pomodoro timer. It uses an ePaper display and a rotary dial for input.
 The code in this repository will not be ready-to-use, as some assets and fonts have been removed. However, if you really want to you should be able to adapt the code to your needs.
 
+## What is the Pomodoro Technique?
+
+[Wikipedia article](https://en.wikipedia.org/wiki/Pomodoro_Technique). It's basically a time management technique where you work for a set amount of time (usually 25 minutes) and then take a short break (5 minutes). After a few iterations, you take a longer break (15-30 minutes). The idea is to keep you focused and productive.
+
+This device is an overengineered version of that supporting multiple presets. If you want to start using the pomodoro technique, buy an [actual pomodoro timer](https://a.co/d/02tYlm8). This project was a way to rekindle my love for electronics and designing my own thing. Keep reading for more background info.
+
 ## Parts List
 
 - ESP32 (I used an [AZDelivery ESP32 NodeMCU](https://www.az-delivery.de/en/products/esp32-developmentboard))

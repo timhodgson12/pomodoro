@@ -1,15 +1,7 @@
-# pomodoro
-
 ![the finished product from the front](docs/front.jpg)
 
-This is the repository for an ESP32 based pomodoro timer. It uses an ePaper display and a rotary dial for input.
+This is the repository for an ESP32 based focus timer. It uses an ePaper display and a rotary dial for input.
 The code in this repository will not be ready-to-use, as some assets and fonts have been removed. However, if you really want to you should be able to adapt the code to your needs.
-
-## What is the Pomodoro Technique?
-
-[Wikipedia article](https://en.wikipedia.org/wiki/Pomodoro_Technique). It's basically a time management technique where you work for a set amount of time (usually 25 minutes) and then take a short break (5 minutes). After a few iterations, you take a longer break (15-30 minutes). The idea is to keep you focused and productive.
-
-This device is an overengineered version of that supporting multiple presets. If you want to start using the pomodoro technique, buy an [actual pomodoro timer](https://a.co/d/02tYlm8). This project was a way to rekindle my love for electronics and designing my own thing. Keep reading for more background info.
 
 ## Parts List
 
@@ -25,7 +17,7 @@ This device is an overengineered version of that supporting multiple presets. If
 
 I love trying out different productivity techniques - some say that the quest to optimize your productivity is the ultimate procrastination method, so maybe that is what drove me to this project. I also have a habit of committing time (around a month of work outside my normal job) once a year to a project that benefits someone else. Last year, I bought a 3D printer (BambuLab X1C) and wanted to put it to good use. I have previously finished an apprenticeship as an electronics
 engineer before pivoting to software engineering, so I also wanted to come back to my roots and build something physical.
-My friend struggles with time management throughout the day sometimes - lots of different tasks to organize, and little focus. So I thought to myself: Why not make them a pomodoro timer? So, I set out with a few goals:
+My friend struggles with time management throughout the day sometimes - lots of different tasks to organize, and little focus. So I thought to myself: Why not make them a focus timer? So, I set out with a few goals:
 
 - It should be a physical device
 - It should be _fun_

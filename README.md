@@ -104,7 +104,23 @@ During the pause, you can view some statistics. Every few iterations (4 by defau
 
 ## Development
 
-### Pin Mapping
+### Prerequisites
+
+- PlatformIO (I used the VSCode extension)
+- Python 3.13+ for asset (re)generation
+
+### Generating Assets
+
+In order to prepare images, icons, and fonts, you will need to run the `generate_assets.py` script. This script will take care of resizing images, converting them to the correct format, and generating the necessary C++ code to include them in the project.
+
+```bash
+# install dependencies with uv or a different package manager
+uv sync
+
+uv run generate_assets.py
+```
+
+## Pin Mapping
 
 #### Rotary Encoder (KY-040)
 

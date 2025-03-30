@@ -3,6 +3,13 @@
 This is the repository for an ESP32 based focus timer. It uses an ePaper display and a rotary dial for input.
 The code in this repository will not be ready-to-use, as some assets and fonts have been removed. However, if you really want to you should be able to adapt the code to your needs.
 
+<p align="center">
+    <a href="https://makerworld.com/de/models/1264318-pomodoro-focus-timer#profileId-1289673">
+    <img src="docs/makerworld_logo.svg" alt="MakerWorld Logo" />
+    <br />
+    View on MakerWorld
+</a>
+
 ## Parts List
 
 - ESP32 (I used an [AZDelivery ESP32 NodeMCU](https://www.az-delivery.de/en/products/esp32-developmentboard))

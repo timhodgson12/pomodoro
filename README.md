@@ -15,11 +15,14 @@ The code in this repository will not be ready-to-use, as some assets and fonts h
 
 - ESP32 (I used an [AZDelivery ESP32 NodeMCU](https://www.az-delivery.de/en/products/esp32-developmentboard))
 - WaveShare 4.26inch e-Paper display HAT, 800x480 ([link](https://www.waveshare.com/4.26inch-e-paper-hat.htm))
+  - Other displays will work but the UI is designed for this specific resolution
 - KY-040 rotary encoder with button
-- A single WS2812 LED (could be replaced with a simple RGB LED)A
+- A single WS2812 LED (could be replaced with a simple RGB LED)
 - A USB-C connector (like [this one](https://amzn.eu/d/8UpvqWe))
+  - Note: if you use a 2-wired USB-C connector, you might need to use an USB A to USB C cable to power the device (my best guess is because of the missing power delivery negotiation)
 - 3d printed case ([`onshape` file](https://cad.onshape.com/documents/06055e629740267835bb7660/w/df56eb93ab74e2f4d61e5097/e/21a7853695e4900200750891?renderMode=0&uiState=67e6e3924368850ba92069f6))
-- Some resistors and 0.1uF capacitors
+- Some resistors (for the LED and a pullup resistor for the switch) and 0.1uF capacitors (to smooth out the rotary encoder signal)
+- Optional: tire balancing weights and rubber feet
 
 ## Project Origin
 

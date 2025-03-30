@@ -5,7 +5,7 @@ The code in this repository will not be ready-to-use, as some assets and fonts h
 
 <p align="center">
     <a href="https://makerworld.com/de/models/1264318-pomodoro-focus-timer#profileId-1289673">
-        <img src="https://raw.githubusercontent.com/Rukenshia/pomodoro/refs/heads/main/docs/makerworld_logo.png" alt="MakerWorld Logo" />
+        <img src="https://raw.githubusercontent.com/Rukenshia/pomodoro/refs/heads/main/docs/makerworld_logo.png" width="200px" alt="MakerWorld Logo" />
         <br />
         View on MakerWorld
     </a>

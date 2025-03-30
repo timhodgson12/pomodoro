@@ -1,27 +1,3 @@
-// GxEPD2_HelloWorld.ino by Jean-Marc Zingg
-//
-// Display Library example for SPI e-paper panels from Dalian Good Display and boards from Waveshare.
-// Requires HW SPI and Adafruit_GFX. Caution: the e-paper panels require 3.3V supply AND data lines!
-//
-// Display Library based on Demo Example from Good Display: https://www.good-display.com/companyfile/32/
-//
-// Author: Jean-Marc Zingg
-//
-// Version: see library.properties
-//
-// Library: https://github.com/ZinggJM/GxEPD2
-
-// Supporting Arduino Forum Topics (closed, read only):
-// Good Display ePaper for Arduino: https://forum.arduino.cc/t/good-display-epaper-for-arduino/419657
-// Waveshare e-paper displays with SPI: https://forum.arduino.cc/t/waveshare-e-paper-displays-with-spi/467865
-//
-// Add new topics in https://forum.arduino.cc/c/using-arduino/displays/23 for new questions and issues
-
-// see GxEPD2_wiring_examples.h for wiring suggestions and examples
-// if you use a different wiring, you need to adapt the constructor parameters!
-
-// uncomment next line to use class GFX of library GFX_Root instead of Adafruit_GFX
-// #include <GFX.h>
 #include <Arduino.h>
 
 #include <ESP32Encoder.h>
@@ -47,8 +23,9 @@
 
 #define MINUTE 60 * 1000
 
-#define ENCODER_CLK 32                     // Change these pin numbers
-#define ENCODER_DT 21                      // according to your wiring
+#define ENCODER_CLK 32
+#define ENCODER_DT 21
+
 #define ENCODER_STABILITY_DELAY 50         // ms to wait for stable position
 #define ENCODER_LOCK_TIME_AFTER_BUTTON 200 // ms to ignore encoder changes after button press
 
@@ -76,7 +53,6 @@ void IRAM_ATTR checkPosition(void *arg)
   // If there was a recent button press, ignore encoder changes
   if (currentTime - Button::instance->lastPressTime < ENCODER_STABILITY_DELAY)
   {
-    // encoder.setCount(debouncedCount); // Reset to last stable position
     return;
   }
 
@@ -84,7 +60,6 @@ void IRAM_ATTR checkPosition(void *arg)
   {
     debouncedCount = (currentCount % 2 == 0 ? currentCount : currentCount - 1) / 2;
     lastEncoderUpdate = currentTime;
-    // encoder.setCount(debouncedCount);
   }
 }
 
@@ -96,7 +71,6 @@ void setupEncoder()
   encoder = ESP32Encoder(true, checkPosition);
   ESP32Encoder::useInternalWeakPullResistors = puType::none;
 
-  // Use full quadrature mode for better accuracy
   encoder.attachHalfQuad(ENCODER_DT, ENCODER_CLK);
   encoder.setFilter(1023);
 
@@ -318,9 +292,6 @@ void setup()
   timer.addPreset(iconProvider->getPresetIcon("Focus"), iconProvider->getTimerRunningBackgroundImage(), "Focus", 25 * MINUTE, 5 * MINUTE, 20 * MINUTE);
 
   timer.selectPreset(1);
-  // timer.loop(&debouncedCount);
-  // timer.start();
-  // timer.startBreak();
 }
 
 void loop()

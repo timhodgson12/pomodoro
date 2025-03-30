@@ -120,6 +120,18 @@ uv sync
 uv run scripts/generate_assets.py
 ```
 
+### Customizing Presets
+
+The presets are defined in `src/main.cpp`:
+
+```cpp
+  timer.addPreset(iconProvider->getPresetIcon("Emails"), iconProvider->getTimerRunningBackgroundImage(), "Emails", 15 * MINUTE, 5 * MINUTE, 15 * MINUTE);
+  timer.addPreset(iconProvider->getPresetIcon("Coding"), iconProvider->getTimerRunningBackgroundImage(), "Coding", 45 * MINUTE, 15 * MINUTE, 30 * MINUTE, 2);
+  timer.addPreset(iconProvider->getPresetIcon("Focus"), iconProvider->getTimerRunningBackgroundImage(), "Focus", 25 * MINUTE, 5 * MINUTE, 20 * MINUTE);
+```
+
+If you want to customize this, I would start there and keep looking for references to these presets.
+
 ## Pin Mapping
 
 #### Rotary Encoder (KY-040)

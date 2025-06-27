@@ -1,5 +1,8 @@
 # ESP32 and Waveshare 4.26" E-Paper Display Setup
 
+> [!NOTE]
+> Special thanks to [@dibolei](https://github.com/dibolei) for contributing this documentation.
+
 ## Parts used for this Documentation
 
 - Waveshare 4.26-inch E-Paper Display HAT, 800x480 (SSD1677 controller)

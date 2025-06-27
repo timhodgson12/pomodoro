@@ -43,6 +43,9 @@ This was my second dive back into building things with microcontrollers in a lon
 
 #### ePaper Display
 
+> [!TIP]
+> You can find a guide on how to set up the display [here](./docs/display_wiring.md)
+
 I needed some sort of display, or at least I _wanted_ some sort of display. One of the main motivations for this project was that it should be out of your way - until it is time to finish your current focus and move on. For me, this meant that I wanted a display without any backlight.
 
 The display should also be large enough that you can put the whole device somewhere on your desk and still be able to read it. After ordering and playing around with a few WaveShare ePaper displays, I settled on the 4.26" variant for multiple reasons:

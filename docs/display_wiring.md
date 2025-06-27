@@ -1,6 +1,7 @@
 # ESP32 and Waveshare 4.26" E-Paper Display Setup
 
-## Compatible Hardware
+## Parts used for this Documentation
+
 - Waveshare 4.26-inch E-Paper Display HAT, 800x480 (SSD1677 controller)
 - ESP32 (ESP-WROOM-32 Development Board)
 
@@ -8,7 +9,7 @@
 
 On newer revisions of these display boards, there is a PWR pin that needs to be pulled HIGH in software or tied to the 3.3v line. If this pin does not have power, the board will not try to draw from VCC and therefore not be powered.
 
-NOTE: The wiring below is based on the ESP-WROOM-32 Development Board (somethimes marked as ESP32S).
+NOTE: The wiring below is based on the ESP-WROOM-32 Development Board (sometimes also called ESP32S).
 As such, your wiring may vary slightly.
 
 | Display Pin | ESP32 GPIO |
@@ -24,6 +25,7 @@ As such, your wiring may vary slightly.
 | PWR         | GPIO 22 (Set HIGH in "main.cpp" setup() function, around line 86 and 87 as of the time of this writing) |
 
 ## Basic Test Sketch
+
 Below is a basic Arduino sketch using the GxEPD2 library to test the display functionality.
 
 ```cpp
@@ -78,3 +80,4 @@ void setup() {
 }
 
 void loop() { }
+```
